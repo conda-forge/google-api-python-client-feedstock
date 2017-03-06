@@ -1,7 +1,7 @@
 {%set name = "google-api-python-client" %}
-{%set version = "1.5.1" %}
+{%set version = "1.6.2" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "2fd69ea71497a7de01cee4c85a9a64a593458eba0c1fec8d8a24e34d1298fdbd" %}
+{%set hash_val = "8c2f50f8057571a5f817c74820cadb754d47799c5a4ea463c1500fe8e092c1ae" %}
 
 package:
   name: {{ name }}
@@ -23,10 +23,10 @@ requirements:
 
   run:
     - python
-    - httplib2 >=0.8,<1
-    - oauth2client
-    - six >=1.6.1,<2
-    - uritemplate >=0.6,<1
+    - httplib2 >=0.9.2,<1dev
+    - oauth2client >=1.5.0,<5.0.0dev
+    - six >=1.6.1,<2dev
+    - uritemplate >=3.0.0,<4dev
 
 test:
   imports:
@@ -42,3 +42,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - ocefpaf
