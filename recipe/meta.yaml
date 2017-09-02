@@ -1,7 +1,7 @@
 {%set name = "google-api-python-client" %}
-{%set version = "1.6.2" %}
+{%set version = "1.6.3" %}
 {%set hash_type = "sha256" %}
-{%set hash_val = "8c2f50f8057571a5f817c74820cadb754d47799c5a4ea463c1500fe8e092c1ae" %}
+{%set hash_val = "becd89fc5f28ce5e1f5eba67bc9b7083485efaed968963bfdfbf7a45e145e0f4" %}
 
 package:
   name: {{ name }}
