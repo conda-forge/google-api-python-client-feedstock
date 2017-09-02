@@ -1,7 +1,7 @@
 About google-api-python-client
 ==============================
 
-Home: http://github.com/google/google-api-python-client/
+Home: https://github.com/google/google-api-python-client/
 
 Package license: Apache 2.0 and MIT
 
