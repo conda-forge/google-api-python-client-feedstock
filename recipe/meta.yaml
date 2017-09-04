@@ -1,19 +1,21 @@
-{%set name = "google-api-python-client" %}
-{%set version = "1.6.3" %}
-{%set hash_type = "sha256" %}
-{%set hash = "becd89fc5f28ce5e1f5eba67bc9b7083485efaed968963bfdfbf7a45e145e0f4" %}
+{% set name = "google-api-python-client" %}
+{% set version = "1.6.3" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "becd89fc5f28ce5e1f5eba67bc9b7083485efaed968963bfdfbf7a45e145e0f4" %}
+{% set build = 0 %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: 0
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -38,6 +40,8 @@ about:
   home: https://github.com/google/google-api-python-client/
   license: Apache 2.0 and MIT
   summary: 'Google API Client Library for Python'
+  dev_url: https://github.com/google/google-api-python-client/
+  doc_url: https://developers.google.com/api-client-library/python/start/get_started
 
 extra:
   recipe-maintainers:
