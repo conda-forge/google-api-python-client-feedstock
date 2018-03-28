@@ -1,8 +1,8 @@
 {% set name = "google-api-python-client" %}
-{% set version = "1.6.4" %}
+{% set version = "1.6.6" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "bb1f27740f6596f8272a2e1033d93d68e27e8ed5d22d6ab957e3f1d3f8ce05f6" %}
+{% set hash = "ec72991f95201996a4edcea44a079cae0292798086beaadb054d91921632fe1b" %}
 {% set build = 0 %}
 
 package:
@@ -16,7 +16,7 @@ source:
 
 build:
   noarch: python
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
