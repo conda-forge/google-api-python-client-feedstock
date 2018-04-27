@@ -1,8 +1,8 @@
 {% set name = "google-api-python-client" %}
-{% set version = "1.6.6" %}
+{% set version = "1.6.7" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "ec72991f95201996a4edcea44a079cae0292798086beaadb054d91921632fe1b" %}
+{% set hash = "05583a386e323f428552419253765314a4b29828c3cee15be735f9ebfa5aebf2" %}
 
 package:
   name: {{ name }}
