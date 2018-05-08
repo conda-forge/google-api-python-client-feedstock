@@ -1,8 +1,8 @@
 {% set name = "google-api-python-client" %}
-{% set version = "1.6.6" %}
+{% set version = "1.6.7" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "ec72991f95201996a4edcea44a079cae0292798086beaadb054d91921632fe1b" %}
+{% set hash = "05583a386e323f428552419253765314a4b29828c3cee15be735f9ebfa5aebf2" %}
 
 package:
   name: {{ name }}
@@ -10,18 +10,18 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ bundle }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
   {{ hash_type }}: {{ hash }}
 
 build:
   noarch: python
   number: 0
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
 
   run:
     - python

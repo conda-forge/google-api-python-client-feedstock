@@ -14,12 +14,15 @@ Summary: Google API Client Library for Python
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/google-api-python-client-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/google-api-python-client-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/google-api-python-client-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/google-api-python-client-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/google-api-python-client/badges/version.svg)](https://anaconda.org/conda-forge/google-api-python-client)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/google-api-python-client/badges/downloads.svg)](https://anaconda.org/conda-forge/google-api-python-client)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-google--api--python--client-green.svg)](https://anaconda.org/conda-forge/google-api-python-client) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/google-api-python-client.svg)](https://anaconda.org/conda-forge/google-api-python-client) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/google-api-python-client.svg)](https://anaconda.org/conda-forge/google-api-python-client) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/google-api-python-client.svg)](https://anaconda.org/conda-forge/google-api-python-client) |
 
 Installing google-api-python-client
 ===================================
