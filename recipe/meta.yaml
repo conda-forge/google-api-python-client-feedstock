@@ -1,8 +1,8 @@
 {% set name = "google-api-python-client" %}
-{% set version = "1.6.7" %}
+{% set version = "1.7.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "05583a386e323f428552419253765314a4b29828c3cee15be735f9ebfa5aebf2" %}
+{% set hash = "5dcd2b3f2dcdf69d6bcf0c215ca8730fa6363ed0177ba2083e2e6f614e7682e9" %}
 
 package:
   name: {{ name }}
@@ -26,7 +26,8 @@ requirements:
   run:
     - python
     - httplib2 >=0.9.2,<1dev
-    - oauth2client >=1.5.0,<5.0.0dev
+    - google-auth >=1.4.1
+    - google-auth-httplib2 >=0.0.3
     - six >=1.6.1,<2dev
     - uritemplate >=3.0.0,<4dev
 
