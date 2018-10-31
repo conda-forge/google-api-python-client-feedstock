@@ -1,5 +1,5 @@
 {% set name = "google-api-python-client" %}
-{% set version = "1.6.7" %}
+{% set version = "1.7.4" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
 {% set hash = "05583a386e323f428552419253765314a4b29828c3cee15be735f9ebfa5aebf2" %}
@@ -19,12 +19,16 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
+  host:
+    - pip
+    - python
   build:
     - python
     - pip
-
   run:
     - python
+    - google-auth >=1.4.1
+    - google-auth-httplib2 >=0.0.3
     - httplib2 >=0.9.2,<1dev
     - oauth2client >=1.5.0,<5.0.0dev
     - six >=1.6.1,<2dev
