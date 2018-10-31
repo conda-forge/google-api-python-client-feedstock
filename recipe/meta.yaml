@@ -43,6 +43,7 @@ test:
 about:
   home: https://github.com/google/google-api-python-client/
   license: Apache 2.0 and MIT
+  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
   summary: 'Google API Client Library for Python'
   dev_url: https://github.com/google/google-api-python-client/
   doc_url: https://developers.google.com/api-client-library/python/start/get_started
