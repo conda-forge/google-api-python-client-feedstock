@@ -11,7 +11,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -19,21 +19,25 @@ requirements:
     - pip
   run:
     - python
-    - httplib2 >=0.9.2,<1dev
+    - google-api-core >=1.13.0,<2dev
     - google-auth >=1.4.1
-    - six >=1.6.1,<2dev
     - google-auth-httplib2 >=0.0.3
+    - httplib2 >=0.9.2,<1dev
+    - six >=1.6.1,<2dev
     - uritemplate >=3.0.0,<4dev
 
 test:
   imports:
     - apiclient
     - googleapiclient
-    - googleapiclient.discovery_cache
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/google/google-api-python-client/
-  license: Apache 2.0 and MIT
+  license: Apache-2.0
   license_file: LICENSE
   summary: Google API Client Library for Python
   dev_url: https://github.com/google/google-api-python-client/
