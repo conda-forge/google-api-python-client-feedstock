@@ -3,7 +3,7 @@ About google-api-python-client
 
 Home: https://github.com/google/google-api-python-client/
 
-Package license: Apache 2.0 and MIT
+Package license: Apache-2.0
 
 Feedstock license: BSD 3-Clause
 
