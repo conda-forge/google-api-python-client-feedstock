@@ -5,7 +5,7 @@ Home: https://github.com/google/google-api-python-client/
 
 Package license: Apache-2.0 and MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Google API Client Library for Python
 
