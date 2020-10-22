@@ -1,5 +1,5 @@
 {% set name = "google-api-python-client" %}
-{% set version = "1.12.4" %}
+{% set version = "1.12.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d4b850e1aa107113339baf27670ae80d493f4e7758e455cee40100e13f07c2d6
+  sha256: 1892cd490d164e5ec2f2168dc3b4fa0af68f36ca15a88b91bca1826b3d4f2829
 
 build:
   number: 0
