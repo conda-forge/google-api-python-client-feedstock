@@ -40,6 +40,7 @@ Installing `google-api-python-client` from the `conda-forge` channel can be achi
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `google-api-python-client` can be installed with:
