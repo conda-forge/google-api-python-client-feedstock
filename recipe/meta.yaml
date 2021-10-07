@@ -10,7 +10,7 @@ source:
   sha256: 1c6267c7f018d86afc62dd8ec844a3e7189022a35ee239ed704cbda010888998
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -20,11 +20,10 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - google-api-core >=1.21.0,<2dev
-    - google-auth >=1.16.0,<2dev
+    - google-api-core >=1.21.0,<3dev
+    - google-auth >=1.16.0,<3dev
     - google-auth-httplib2 >=0.1.0
     - httplib2 >=0.15.0,<1dev
-    - six >=1.13.0,<2dev
     - uritemplate >=3.0.0,<4dev
 
 test:
