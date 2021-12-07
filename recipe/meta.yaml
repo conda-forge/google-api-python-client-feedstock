@@ -20,11 +20,11 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - google-api-core >=1.21.0,<3dev
-    - google-auth >=1.16.0,<3dev
+    - google-api-core >=1.21.0,<3.0.0dev
+    - google-auth >=1.16.0,<3.0.0dev
     - google-auth-httplib2 >=0.1.0
     - httplib2 >=0.15.0,<1dev
-    - uritemplate >=3.0.0,<4dev
+    - uritemplate >=3.0.0,<5
 
 test:
   imports:
