@@ -122,5 +122,4 @@ Feedstock Maintainers
 
 * [@akrherz](https://github.com/akrherz/)
 * [@ocefpaf](https://github.com/ocefpaf/)
-* [@pmlandwehr](https://github.com/pmlandwehr/)
 
