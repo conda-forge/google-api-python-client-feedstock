@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - google-api-core >=1.31.5,<3.0.0dev,!=2.0.,!=2.1.,!=2.2.*,!=2.3.0
+    - google-api-core >=1.31.5,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0
     - google-auth >=1.16.0,<3.0.0dev
     - google-auth-httplib2 >=0.1.0
     - httplib2 >=0.15.0,<1dev
