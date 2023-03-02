@@ -1,11 +1,11 @@
-About google-api-python-client
-==============================
+About google-api-python-client-feedstock
+========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-api-python-client-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/google/google-api-python-client/
 
 Package license: Apache-2.0 and MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-api-python-client-feedstock/blob/main/LICENSE.txt)
 
 Summary: Google API Client Library for Python
 
