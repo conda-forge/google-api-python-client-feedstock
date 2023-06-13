@@ -1,5 +1,5 @@
 {% set name = "google-api-python-client" %}
-{% set version = "2.88.0" %}
+{% set version = "2.89.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-api-python-client-{{ version }}.tar.gz
-  sha256: 37068453f79ea28e5394a8fe20a4ba620594e7f8541068bea2e844dacdcc9d33
+  sha256: 0b0c9503df2da92692ffceee88423ca593cbf0b939d879e2c46fbdc1a39cf091
 
 build:
   number: 0
@@ -20,10 +20,10 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - httplib2 >=0.15.0,<1dev
-    - google-auth >=1.19.0,<3.0.0dev
+    - httplib2 >=0.15.0,<1.dev0
+    - google-auth >=1.19.0,<3.0.0.dev0
     - google-auth-httplib2 >=0.1.0
-    - google-api-core >=1.31.5,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0
+    - google-api-core >=1.31.5,<3.0.0.dev0,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0
     - uritemplate >=3.0.1,<5
 
 test:
