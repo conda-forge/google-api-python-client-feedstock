@@ -148,6 +148,7 @@ Feedstock Maintainers
 =====================
 
 * [@akrherz](https://github.com/akrherz/)
+* [@jan-janssen](https://github.com/jan-janssen/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 * [@xylar](https://github.com/xylar/)
 
