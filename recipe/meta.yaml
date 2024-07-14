@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/google-api-python-client-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/google_api_python_client-{{ version }}.tar.gz
   sha256: e739cb74aac8258b1886cb853b0722d47c81fe07ad649d7f2206f06530513c04
 
 build:
