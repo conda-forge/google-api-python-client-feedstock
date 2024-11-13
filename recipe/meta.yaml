@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/google_api_python_client-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/google_api_python_client-{{ version }}.tar.gz
   sha256: 9593476dc548fcba794f2ea0e3cfbf927de5a7b79379781c1664637bf246f072
 
 build:
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - httplib2 >=0.19.0,<1.dev0
     - google-auth >=1.32.0,<3.0.0.dev0,!=2.24.0,!=2.25.0
     - google-auth-httplib2 >=0.2.0,<1.0.0
@@ -34,6 +34,7 @@ test:
   commands:
     - pip check
   requires:
+    - python {{ python_min }}
     - pip
 
 about:
