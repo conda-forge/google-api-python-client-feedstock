@@ -1,0 +1,55 @@
+schema_version: 1
+
+context:
+  name: google-api-python-client
+  version: "2.200.0"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/google_api_python_client-${{ version }}.tar.gz
+  sha256: 82aa18b851328ea04867fd51c5a0c8da2e1b86ec45ce08487e902e7726d4ee50
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - httplib2 >=0.19.0,<1.0.0
+    - google-auth >=1.32.0,<3.0.0,!=2.24.0,!=2.25.0
+    - google-auth-httplib2 >=0.2.0,<1.0.0
+    - google-api-core >=1.31.5,<3.0.0,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0
+    - uritemplate >=3.0.1,<5
+
+tests:
+  - python:
+      imports:
+        - apiclient
+        - googleapiclient
+      pip_check: true
+      python_version:
+        - ${{ python_min }}
+        - "*"
+
+about:
+  license: Apache-2.0 and MIT
+  license_file: LICENSE
+  summary: Google API Client Library for Python
+  homepage: https://github.com/google/google-api-python-client/
+  repository: https://github.com/google/google-api-python-client/
+  documentation: https://developers.google.com/api-client-library/python/start/get_started
+
+extra:
+  recipe-maintainers:
+    - xylar
+    - akrherz
+    - ocefpaf
