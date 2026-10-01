@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-api-python-client
-  version: "2.200.0"
+  version: "2.201.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/google_api_python_client-${{ version }}.tar.gz
-  sha256: 82aa18b851328ea04867fd51c5a0c8da2e1b86ec45ce08487e902e7726d4ee50
+  sha256: d5691982abd7287f53cb0b0e0c6a9984d4103cf864ea0a88cb6e4347bbaf70de
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
 
